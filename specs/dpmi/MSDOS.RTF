@@ -1,0 +1,542 @@
+{\rtf1\ansi \deff0\deflang1024{\fonttbl{\f0\froman Tms Rmn;}{\f1\froman Symbol;}{\f2\fswiss Helv;}{\f3\fmodern Courier;}{\f4\fmodern elite;}{\f5\fmodern prestige;}{\f6\fswiss lettergothic;}{\f7\fmodern gothicPS;}
+{\f8\fmodern LinePrinter;}{\f9\fmodern AvantGarde;}{\f10\fswiss Helvetica-Narrow;}{\f11\fmodern metro;}{\f12\fmodern presentation;}{\f13\fmodern APL;}{\f14\fmodern OCRA;}{\f15\fmodern OCRB;}{\f16\froman Bookman;}{\f17\froman emperorPS;}
+{\f18\froman madaleine;}{\f19\froman zapf humanist;}{\f20\froman classic;}{\f21\froman roman f;}{\f22\froman roman g;}{\f23\froman roman h;}{\f24\froman NewCenturySchlbk;}{\f25\froman palatino;}{\f26\froman souvenir;}{\f27\froman garamond;}
+{\f28\froman caledonia;}{\f29\froman bodini;}{\f30\froman university;}{\f31\fscript script;}{\f32\fscript scriptPS;}{\f33\fscript script c;}{\f34\fscript script d;}{\f35\fscript commercial script;}{\f36\fscript park avenue;}{\f37\fscript coronet;}
+{\f38\fscript script h;}{\f39\fscript greek;}{\f40\froman kana;}{\f41\froman hebrew;}{\f42\froman roman s;}{\f43\froman russian;}{\f44\froman roman u;}{\f45\froman roman v;}{\f46\froman roman w;}{\f47\fdecor narrator;}{\f48\fdecor emphasis;}
+{\f49\fdecor ZapfChancery;}{\f50\fdecor decor d;}{\f51\fdecor old english;}{\f52\fdecor decor f;}{\f53\fdecor decor g;}{\f54\fdecor cooper black;}{\f55\fmodern linedraw;}{\f56\fnil math7;}{\f57\fnil math8;}{\f58\fdecor ZapfDingbats;}{\f59\fnil EAN;}
+{\f60\fnil pcline;}{\f61\fnil tech h;}{\f62\fmodern MS LineDraw;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;
+\red0\green0\blue127;\red0\green127\blue127;\red0\green127\blue0;\red127\green0\blue127;\red127\green0\blue0;\red127\green127\blue0;\red127\green127\blue127;\red192\green192\blue192;}{\stylesheet{\s230\li1152\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 
+\snext230 toc 3;}{\s231\li576\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 \snext231 toc 2;}{\s232\sb120\sl-240\keepn\tqr\tldot\tx8640 \b\f2\lang1033 \snext232 toc 1;}{\s245\qj\fi-720\li720\sl-180 \f2\fs18\lang1033 \snext245 footnote text;}{
+\s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 \snext252 heading 3;}{\s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \b\f2\fs28\lang1033 \snext253 heading 2;}{\s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 
+\snext254 heading 1;}{\s255\qj\li720\sl-240 \f2\lang1033 \sbasedon0\snext255 Normal Indent;}{\qj\sl-240 \f2\lang1033 \snext0 Normal;}{\s2\qj\fi-720\li720\sl-240 \f2\lang1033 \snext2 Indent 1st level;}{\s3\qj\fi-720\li1440\sl-240 \f2\lang1033 
+\snext3 Indent 2nd level;}{\s4\qj\fi-720\li2160\sl-240 \f2\lang1033 \snext4 Indent 3rd level;}{\s5\qj\fi-720\li2880\sl-240 \f2\lang1033 \snext5 Indent 4th level;}{\s6\li720\sl-240\tx1872\tx3024\tx4176\tx5328 \f3\lang1033 \snext6 Code Sample Paragrap;}{
+\s7\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 \snext7 Bold Heading (not TC;}{\s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \snext8 Boxed paragraph;}{\s9\li1440\ri1440\sl-240\keep\keepn\box
+\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \caps\f2\lang1033 \snext9 Boxed Header Paragra;}{\s10\qj\sl-240\tx720\tqc\tx6120\tqr\tx11520 \b\f2\lang1033 \snext10 Standard Running-Hea;}}{\info{\title DPMI notes for Windows applications}
+{\author Fred C. Bryan}{\operator Fred C. Bryan}{\creatim\yr2023\mo11\dy28\hr16\min30}{\revtim\yr2023\mo11\dy28\hr16\min30}{\version2}{\edmins1}{\nofpages1}{\nofwords6360}{\nofchars36262}{\vern16433}}
+\paperw12240\paperh15840\margl1800\margr1800\margt6480\margb1440\gutter0 \facingp\widowctrl\ftnbj\ftnrestart\revbar1\revprop0 \sectd \linex576\endnhere \pard\plain \qc\sl-360 \f2\lang1033 {\b\fs28 MS-DOS API EXTENSIONS FOR DPMI HOSTS
+\par }{\b\fs28 
+\par }{\b\fs28 Version Pre-Release 0.04
+\par }{\field\flddirty{\*\fldinst {\b\fs28 date \\@ "MMMM d, yyyy"}}{\fldrslt }}{\b\fs28 
+\par }{\b\fs28 
+\par }{\b\fs28 MICROSOFT CONFIDENTIAL
+\par }\pard \qj\sl-240 \sect \sectd \margtsxn1440\linex576\endnhere {\headerl \pard\plain \qj\sl-240\tqr\tlul\tx8640 \f2\lang1033 {\ul Microsoft Confidential\tab 
+\par }}{\headerr \pard\plain \qj\sl-240\tqr\tlul\tx8640 \f2\lang1033 {\ul Microsoft Confidential\tab 
+\par }}\pard\plain \qc\sl-240 \f2\lang1033 {\b\fs28 TABLE OF }{\b\fs28 CONTENTS
+\par }\pard \qj\sl-240 {\v .Begin Table C.
+\par }\pard\plain \s232\sb120\sl-240\keepn\tqr\tldot\tx8640 \b\f2\lang1033 1. Introduction\tab 1
+\par 2. Detecting the Presence of MS-DOS Extensions\tab 2
+\par 3. API Entry Point Functions\tab 3
+\par \pard\plain \s231\li576\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 3.1 Get MS-DOS Extension Version\tab 4
+\par 3.2 Get Selector to Base of LDT\tab 5
+\par \pard\plain \s232\sb120\sl-240\keepn\tqr\tldot\tx8640 \b\f2\lang1033 4. Notes for Microsoft Windows Program Writers\tab 6
+\par 6. DOS and BIOS Calls\tab 9
+\par 7. DOS State on Entry Into Protected Mode\tab 11
+\par 8. Supported DOS Calls\tab 12
+\par \pard\plain \s231\li576\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 8.1 DOS Calls That Are Not Supported\tab 13
+\par \pard\plain \s230\li1152\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 8.1.1 Unsupported Interrupts\tab 13
+\par 8.1.2 Unsupported Interrupt 21h DOS Functions\tab 13
+\par \pard\plain \s231\li576\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 8.2 Calls That Behave Differently In Protected Mode\tab 14
+\par \pard\plain \s230\li1152\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 {\revised Function 00h -- Terminate Process}\tab 14
+\par 8.2.1 Functions 25h and 35h -- Set/Get Interrupt Vector\tab 14
+\par 8.2.2 Function 31h -- Terminate and Stay Resident\tab 14
+\par 8.2.3 Function 32h -- Get Current Country Data\tab 14
+\par 8.2.4 Functions 3Fh and 40h -- Read/Write File or Device\tab 15
+\par 8.2.5 Function 44h, Subfunctions 02h, 03h, 04h, and 05h\tab 15
+\par 8.2.6 Function 44h, Subfunction 0Ch\tab 15
+\par 8.2.7 Functions 48h, 49h and 4Ah\tab 15
+\par 8.2.8 Function 4Bh -- Load and Execute Program\tab 15
+\par 8.2.9 Function 4Ch -- Terminate Process with Return Code\tab 16
+\par 8.2.10 Function 65h -- Get Extended Country Information\tab 16
+\par \pard\plain \s232\sb120\sl-240\keepn\tqr\tldot\tx8640 \b\f2\lang1033 9. Supported BIOS Calls\tab 17
+\par \pard\plain \s231\li576\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 9.1 Interrupt 10h -- Video\tab 18
+\par \pard\plain \s230\li1152\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 9.1.1 Register Based Functions (supported):\tab 18
+\par 9.1.2 Function 10h -- Set Palette Registers\tab 18
+\par 9.1.3 Function 13h -- Write String\tab 18
+\par 9.1.4 Functions that are not Fully Supported\tab 18
+\par \pard\plain \s231\li576\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 9.2 Interrupt 11h -- Equipment Determination\tab 19
+\par 9.3 Interrupt 12h -- Memory Size Determination\tab 20
+\par 9.4 Interrupt 13h -- Diskette / Fixed Disk Interface\tab 21
+\par 9.5 Interrupt 14h -- Asynchronous Communications\tab 22
+\par 9.6 Interrupt 15h -- System Services\tab 23
+\par \pard\plain \s230\li1152\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 9.6.1 Register Based Functions (supported):\tab 23
+\par 9.6.2 Function C0h -- Return System Configuration Parameters\tab 23
+\par 9.6.3 Function C1h -- Pointing Device Interface\tab 23
+\par 9.6.4 Functions that are Not Supported:\tab 23
+\par \pard\plain \s231\li576\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 9.7 Interrupt 16h -- Keyboard\tab 24
+\par 9.8 Interrupt 17h -- Printer\tab 25
+\par 9.9 Interrupt 1Ah -- System-Timer and Real-Time Clock\tab 26
+\par \pard\plain \s230\li1152\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 9.9.1 Register Based Functions (supported):\tab 26
+\par 9.9.2 Function 06h -- Set Real-Time Clock Alarm\tab 26
+\par \pard\plain \s232\sb120\sl-240\keepn\tqr\tldot\tx8640 \b\f2\lang1033 \page 10. Mouse Driver Interface\tab 27
+\par \pard\plain \s231\li576\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 10.1 Mouse Calls that Are Supported\tab 27
+\par \pard\plain \s230\li1152\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 10.1.1 Register Based Calls\tab 27
+\par 10.1.2 Function 09h -- Set Pointer Shape\tab 27
+\par 10.1.3 Function 0Ch -- Set User-Defined Mouse Event Handler\tab 28
+\par 10.1.4 Functions 16h and 17h -- Save/Restore Mouse Driver State\tab 28
+\par \pard\plain \s231\li576\sl-240\keepn\tqr\tldot\tx8640 \f2\lang1033 10.2 Mouse Calls that Are Not Supported\tab 28
+\par \pard\plain \s232\sb120\sl-240\keepn\tqr\tldot\tx8640 \b\f2\lang1033 11. NETBIOS\tab 29
+\par 12. Interrupts 23h and 24h\tab 30
+\par \pard\plain \qj\sl-240 \f2\lang1033 {\v .End Table C.
+\par }
+\par \sect \sectd \margtsxn1440\pgnrestart\linex576\footery480\endnhere {\headerl \pard\plain \qj\sl-240\tqr\tlul\tx8640 \f2\lang1033 {\ul Microsoft Confidential\tab 
+\par }}{\headerr \pard\plain \qj\sl-240\tqr\tlul\tx8640 \f2\lang1033 {\ul Microsoft Confidential\tab 
+\par }}{\footerl \pard\plain \s10\qj\li-1800\ri-1800\sl-240\tx-1080\tqc\tx4320\tqr\tx9720 \b\f2\lang1033 {\field\flddirty{\*\fldinst date \\@ "MMMM d, yyyy"}{\fldrslt }}\tab MS-DOS DPMI Extension Preliminary Documentation Ver 0.04\tab Page {\field{\*\fldinst 
+page}{\fldrslt 1}}
+\par }{\footerr \pard\plain \s10\qj\li-1800\ri-1800\sl-240\tx-1080\tqc\tx4320\tqr\tx9720 \b\f2\lang1033 {\field\flddirty{\*\fldinst date \\@ "MMMM d, yyyy"}{\fldrslt }}\tab MS-DOS DPMI Extension Preliminary Documentation Ver 0.04\tab Page {\field{\*\fldinst 
+page}{\fldrslt 1}}
+\par }\pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 1. Introduction
+\par \pard\plain \qj\sl-240 \f2\lang1033 While the DOS Protected Mode Interface (DPMI) specification does not support DOS calls from protected mode programs, extender
+s from many companies, including enhanced mode Windows 3.00, do support Int 21h and other standard DOS and BIOS interrupts commonly used in DOS extended programs.
+\par 
+\par This document defines an interface that allows the "MS-DOS" extensions to be detected, and provides guidelines on deviations of behavior from DOS calls made in real mode.
+\par \pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 2. Detecting the Presence of MS-DOS Extensions
+\par \pard\plain \qj\sl-240 \f2\lang1033 The MS-DOS extensions are supported by all versions of Enhanced mode Windows.  Windows version 3.00 does not support the Int 
+2Fh API detection mechanism or API entry point, but does support all DOS and BIOS calls documented in this text.  The correct code sequence for detecting the presence of the MS-DOS extensions is as follows:
+\par \pard\plain \s6\li720\sl-240\tx1872\tx3024\tx4176\tx5328 \f3\lang1033 
+\par MS_DOS_Name_String db "MS-DOS", 0
+\par 
+\par ;
+\par ;\tab Note:  This assumes that the program has
+\par ;\tab already called the DPMI real to protected
+\par ;\tab mode switch entry point and is now running
+\par ;\tab in protected mode
+\par ;
+\par Test_For_MS_DOS_Ext_Code:
+\par \tab mov\tab ax, 168Ah
+\par \tab mov\tab (e)si, OFFSET MS_DOS_Name_String
+\par \tab int\tab 2Fh
+\par \tab cmp\tab al, 8Ah
+\par \tab jne\tab Have_MS_DOS_Extensions
+\par 
+\par ;
+\par ;\tab Check for presence of Enhanced Windows 3.00
+\par ;
+\par \tab mov\tab ax, 1600h
+\par \tab int\tab 2Fh
+\par \tab test\tab al, 7Fh
+\par \tab jnz\tab Have_MS_DOS_Extensions_But_No_Call_Back
+\par 
+\par \tab (MS-DOS extensions are not present)
+\par 
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+If the first Int 2Fh succeeds then ES:(E)DI will point to an API entry point that can be called by the program perform functions described in the next section.  If the first Int 2Fh fails, but the program is running under Enhanced mode Windows 3.00 then t
+he MS-DOS extensions are supported, but it is not possible to call the API entry point since it was not supported in Windows 3.00.
+\par \pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 3. API Entry Point Functions
+\par \pard\plain \qj\sl-240 \f2\lang1033 The MS-DOS extensions provide only two new services for protected mode programs.  These are a get version function and a function that returns a selector that points to the base of the current program's LDT.
+\par 
+\par To call the API entry point, programs must execute a far call to the address returned in ES:(E)DI from the function described on page {\field{\*\fldinst pageref presdetect}{\fldrslt }}.
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 3.1 Get MS-DOS Extension Version
+\par \pard\plain \qj\sl-240 \f2\lang1033 This function returns the version of MS-DOS extensions supported by the DPMI host.  Note that the value returned is {\ul not}
+ the version of DOS that the host is running on, it is the version of DPMI MS-DOS extensions that are supported by the host.
+\par \pard\plain \s7\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 To Call
+\par \pard\plain \s3\qj\fi-720\li1440\sl-240 \f2\lang1033 AX = 0000h
+\par \pard\plain \s7\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 Returns
+\par \pard\plain \qj\sl-240 \f2\lang1033 \tab Carry flag is clear
+\par \tab AH = Major MS-DOS extension version number
+\par \tab AL = Minor MS-DOS extension version number
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 3.2 Get Selector to Base of LDT
+\par \pard\plain \qj\sl-240 \f2\lang1033 Note that the DPMI host has the option of either failing this call, or to retu
+rn a read-only descriptor.  If the host returns a writeable LDT base descriptor then system security can be compromised, but performance of some programs (most notably the Windows kernel) can improve dramatically.  This allows programs to avoid ring trans
+itions when examining or modifying LDT selectors.  Note that even read-only access to the LDT reduces overhead a great deal in some circumstances.  This would reduce the number of ring transitions for a get descriptor/set descriptor calls from two to one.
+
+\par \pard\plain \s7\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 To Call
+\par \pard\plain \s3\qj\fi-720\li1440\sl-240 \f2\lang1033 AX = 0100h
+\par \pard\plain \s7\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 Returns
+\par \pard\plain \s3\qj\fi-720\li1440\sl-240 \f2\lang1033 If function was successful:
+\par Carry flag is clear
+\par AX = Selector which points to base of current LDT
+\par 
+\par If function was not successful:
+\par Carry flag is set
+\par \pard\plain \s7\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 Programmer's Notes
+\par \pard\plain \s3\qj\fi-720\li1440\sl-240 \f2\lang1033 {\b o}\tab If this function succeeds, the caller must examine the access rights of the descriptor using a {\i verw} instruction to determine if the descriptor is writeable or is read-only.
+\par {\b o}\tab The selector returned by this function may be a GDT selector or an LDT selector.  Programs should not assume that this selector exists in a particular descriptor table.
+\par {\b o}\tab 
+At some point, the host may choose to move the LDT in linear memory.  The host will be responsible for updating the descriptor for this selector.  For this reason, all programs, including 32-bit flat model programs, should always access the LDT through t
+his selector only.  Never attempt to access the memory at a particular linear address.{\revised   Never create an alias for this descriptor.}
+\par \pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 4. Notes for Microsoft Windows Program Writers
+\par \pard\plain \qj\sl-240 \f2\lang1033 While both Standard and Ehnanced mode Windows support DPMI 0.9 with the MS-DOS extensions, Windows programs should {\ul not} call any DPMI functions other than the following translation services:
+\par 
+\par \tab AX = 0300h -- Simulate Real Mode Interrupt
+\par \tab AX = 0301h -- Call Real Mode Procedure With Far Return Frame
+\par \tab AX = 0302h -- Call Real Mode Procedure With Iret Frame
+\par \tab AX = 0303h -- Allocate Real Mode Call-Back Address
+\par \tab AX = 0304h -- Free Real Mode Call-Back Address
+\par 
+\par {\b No other DPMI services, including the state save and raw mode switch translation ser}{\b vices, should be called by Windows programs or DLLs.}
+  The Windows kernel uses DPMI to allocate memory, manipulate descriptors, and lock pages.  All Windows programs should call the appropriate kernel functions to perform these operations.  The following are hints for Windows progarmmers on ways to avoid ca
+lling DPMI:
+\par 
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 Windows programs should call the GetWinFlags function to determine if they are running in protected mode instead of using the DPMI Get Version call.
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 Windows {\strike applications and DLLs }{\revised programs}{\revised  }should use the function calls supplied by the Windows kernel to manipulate selectors instead of using DPMI services.{\revised 
+  These are:
+\par }{\revised \tab \tab }{\i\revised PrestoChangoSelector}{\revised  (Documented in SDK as ChangeSelector)
+\par }{\i\revised \tab \tab AllocSelector
+\par }{\i\revised \tab \tab AllocDStoCSAlias
+\par }{\i\revised \tab \tab FreeSelector}
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 Windows {\strike applications }{\revised programs }should not use the DPMI DOS Memory Managment services.  The Windows kernel has two functions named {\i GlobalDOSAlloc} and {\i GlobalDOSFree}
+ that should be used by Windows applications and DLLs for allocating and freeing DOS addressable memory.  Under normal circumstances the Windows kernel will have allocated all free DOS addressable memory and so the DPMI functions will always fail.
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 All requests to allocate, reallocate, free, or lock memory should be made through kernel functions.{\revised   For example, }{\i\revised GlobalAlloc, GlobalReAlloc, GlobalFree, etc.}
+\par \pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 {\revised \page Known Bugs and Workarounds For Windows 3.00 DPMI
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised Windows enhanced mode version 3.00 was the first implementation of DPMI 0.9.  ~~~~}
+\par 
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 Int 10h Translation{\revised 
+\par }\pard\plain \qj\sl-240 \f2\lang1033 Windows incorrectly maps Int 10h AH=0Eh (write
+ character TTY) as a write string call (AH=13h).  This means that write string does not work from protected mode.  However, write character will still work as long as the caller's ES:BP point to any valid data and CX=1.  Since Windows only copies the stri
+ng pointed to by ES:BP and does not change any other registers then AX and BX are passed through to the BIOS correctly for the write character operation.  There is no workaround for write string other than using the DPMI translation services.
+\par \pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 5. 32-bit programs
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+Many implementations of the MS-DOS extensions, including Enhanced mode Windows, support 32-bit programs on 80386 and 80486 processors.  In most cases, the APIs are exactly the same as for 16-bit programs except that pointers are 48-bits.  That is, they co
+nsist of a segment and a 32-bit offset.  DOS read and write calls (AH=3Fh and 40h) the count register (ECX) is also extended to 32 bits.  This allows 32-bit programs to perform DOS reads of greater than 64K bytes.
+\par {\revised 
+\par }{\revised Hosts that support 32-bit progra}{\revised 
+ms will ignore and not modify the high word of an extended register unless the DOS or BIOS call returns a pointer (such as the Get Interrupt Vector call).  The extended portion of EAX will also be modified on DOS file read and write calls.  All other call
+}{\revised s will leave the high word of the extended registers unmodified.  If code in real mode modifies the extneded portion of a register then that value will be returned to the protected mode DPMI program.
+\par }\pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 6. DOS and BIOS Calls
+\par \pard\plain \qj\sl-240 \f2\lang1033 Programs running in protected mo
+de under a DPMI host that supports the MS-DOS extensions can make DOS and BIOS calls just as they would when running in real mode (with some minor exceptions).  The only difference is that the code and data of the program can reside in memory above one me
+gabyte, and all pointers use protected mode selectors instead of real mode segments to point to data.  As in real mode, DOS is called by executing Int 21h.
+\par 
+\par When an Int 21h is executed in protected mode any data that is required by that call will be copie
+d to a buffer in real mode and then the real mode DOS will be called with a pointer to the copied data.  The host is responsible for copying data and translating pointers -- DPMI programs that use the MS-DOS extensions need not worry about how 
+\par 
+\par For example, lets look at a series of DOS calls to open and read a file:
+\par 
+\par \pard\plain \s6\li720\sl-240\tx1872\tx3024\tx4176\tx5328 \f3\lang1033 ;
+\par ; Open the file with read-only access
+\par ;
+\par mov\tab ax, 3D00h
+\par mov\tab dx, OFFSET File_Name_String
+\par int\tab 21h
+\par jc\tab Error
+\par 
+\par ;
+\par ; Read the first 6000h bytes of the file
+\par ;
+\par mov\tab bx, ax
+\par mov\tab ah, 3Fh
+\par mov\tab cx, 6000h
+\par mov\tab dx, OFFSET Read_Buffer
+\par int\tab 21h
+\par jc\tab Error
+\par 
+\par ;
+\par ; Close the file
+\par ;
+\par mov\tab ah, 3Eh
+\par int\tab 21h
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+\par The open file call takes an ASCIIZ pathname as a parameter.  Since the address passed to the protected mode Int 21h handler is a selector:offset (DS contains a selector to program's protected mode data segment), real mode DOS would not be able to access t
+he data.  The protected mode DOS translator copies the string into a real mode buffer and then calls DOS in real mode with DS:DX pointing to the r
+eal mode buffer.  The values in other registers are not modified so the call number in AX will not be changed.  When real mode DOS returns, the values returned in the flags and all non-segment registers will be returned to the protected mode program.  In 
+this case, the carry flag indicates an error and the file handle will be returned in AX.
+\par 
+\par The second DOS call reads part of the file into a buffer.  Once again, since the buffer can not be accessed by real mode DOS, the data must be copied through a buffe
+r.  The data will be read into a real mode buffer and copied into the protected mode memory.  Since the real mode buffer is usually smaller than 6000h bytes the translator will probably have to break the read into several smaller pieces.  However, all the
+ copying of data and multiple reads will be invisible to the caller.  The read will behave exactly as if the code were being executed in real mode.
+\par 
+\par For the final call (close file), the protected mode Int 21h hook just reflects the interrupt to real mode without translating anything.  Since the DOS close file command has no pointer parameters, no translation is necessary.
+\par 
+\par The sample code above is 16-bit code and would work on an 80286 DPMI implementation.  However, DPMI supports 32-bit programs on 80386 and 80486 processors.  The only difference between 32-bit and 16-bit programs that pointers require a 32-bit offset in th
+e extended register (EDX instead of DX) and that DOS read and write calls take a 32-bit count in ECX.  The 32-bit equivalent of the sample code is provided below.
+\par 
+\par \pard\plain \s6\li720\sl-240\tx1872\tx3024\tx4176\tx5328 \f3\lang1033 ;
+\par ; Open the file with read-only access
+\par ;
+\par mov\tab ax, 3D00h
+\par mov\tab edx, OFFSET File_Name_String
+\par int\tab 21h
+\par jc\tab Error
+\par 
+\par ;
+\par ; Read the first 6000h bytes of the file
+\par ;
+\par mov\tab bx, ax
+\par mov\tab ah, 3Fh
+\par mov\tab ecx, 6000h
+\par mov\tab edx, OFFSET Read_Buffer
+\par int\tab 21h
+\par jc\tab Error
+\par 
+\par ;
+\par ; Close the file
+\par ;
+\par mov\tab ah, 3Eh
+\par int\tab 21h
+\par \pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 7. DOS State on Entry Into Protected Mode
+\par \pard\plain \qj\sl-240 \f2\lang1033 A host that supports the MS-DOS extensions to DPMI maintains additional state information for each client program.  When a program enter
+s protected mode on an extended DPMI host, the state will be as described in the DPMI 0.9 specification with the following additions:
+\par 
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 1.\tab 
+The protected mode DTA will be mapped to the real mode DTA when the program enters protected mode.  If the DTA address has not been changed from the default at offset 80h in the PSP, then the DTA selector will be the same as the PSP selector.  Otherwis
+e, a new descriptor will be allocated.  Do not modify or free the DTA descriptor.  Use DOS call 2Fh to obtain the address of the DTA.
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 2.\tab The DOS Ctrl+Break (Int 23h) and critical error (Int 24h) interrupt handlers will be set to default handlers as described on page {\field{\*\fldinst pageref int23and24}{\fldrslt }}.
+\par \pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 8. Supported DOS Calls
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+This section describes the differences between real mode DOS and BIOS calls and those made in protected mode.  Obviously, pointers use protected mode selectors instead of real mode segments.  32-bit programs must use 48-bit pointers and the size parameter
+s for some calls such as file reads and writes will be 32-bit.  For example DOS reads and writes use ECX for the size parameter instead of CX for 32-bit programs.  See page {\field{\*\fldinst pageref 32bitsample}{\fldrslt }}
+ for an example of 32-bit DOS code.
+\par 
+\par All DOS calls that are not mentioned in this section should work exactly as documented in {\i The MS-DOS Encyclopedia}.  The minimum assumed DOS version is 3.xx.
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 8.1 DOS Calls That Are Not Supported
+\par \pard\plain \qj\sl-240 \f2\lang1033 The following DOS calls are not supported in protected mode.  They will fail if called.
+\par 
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.1.1 Unsupported Interrupts
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 INT\tab Description
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \tab 20h\tab Terminate Program\line \tab 25h\tab Absolute Disk Read\line \tab 26h\tab Absolute Disk Write\line \tab 27h\tab 
+Terminate And Stay Resident
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.1.2 Unsupported Interrupt 21h DOS Functions
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 \tab AH\tab Description
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 {\strike \tab 00h\tab Terminate Process\line }\tab 0Fh\tab Open File with FCB\line \tab 10h\tab Close File with FCB\line \tab 14h\tab 
+Sequential Read\line \tab 15h\tab Sequential Write\line \tab 16h\tab Create File with FCB\line \tab 21h\tab Random Read\line \tab 22h\tab Random Write\line \tab 23h\tab Get File Size\line \tab 24h\tab Set Relative Record\line \tab 27h\tab 
+Random Block Read\line \tab 28h\tab Random Block Write
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 8.2 Calls That Behave Differently In Protected Mode
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 {\revised Function 00h -- Termi}{\revised nate Process
+\par }\pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 {\revised \tab 
+This call should never be executed by standard DPMI appliations.  The Windows kernel requires a special version of process termination so that it can close Windows applications.  DOS call 0 has been redefined for this purpose.  Hosts must implement this }
+{\revised function, but application writers should never call it.  See page }{\field{\*\fldinst {\revised pageref call0}}{\fldrslt }}{\revised  for more information.
+\par }\pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.2.1 Functions 25h and 35h -- Set/Get Interrupt Vector
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab These functions will set or get the protected mode interrupt vector.  They can b
+e used to hook hardware interrupts (such as the timer or keyboard interrupt) as well as hooking any software interrupts your program wishes to monitor.  With a few exceptions, software interrupts issued in real mode will {\ul not}
+ be reflected to protected mode interrupt handlers.  However, all hardware interrupts will be reflected to protected mode interrupt handlers before being reflected to real mode.  See page {\field{\*\fldinst pageref pmints}{\fldrslt }}
+ for more information on hooking interrupts in protected mode programs.
+\par 
+\par \tab 32-bit programs must use 48-bit pointers and must use the {\i iretd} instruction to return from interrupts.
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.2.2 Function 31h -- Terminate and Stay Resident
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab The value in DX specifies the number of paragraphs of real mode memory to reserve for the program.  {\ul 
+The reserved memory must include any memory allocated for the DOS extender when the program switched to protected mode.}
+  All protected mode memory allocated through Int 31h or protected mode calls to DOS function 48h will not be deallocated -- It is up to the T&SR program to free any unneeded protected mode memory.
+\par 
+\par \tab 
+Note that protected mode "pop-up" programs will need to be very careful when saving and restoring the current DOS state to preserve both the real mode and protected mode states of the current task.  This type of program must call the state save functions
+ documented on page {\field{\*\fldinst pageref statesave}{\fldrslt }}.  It must also save and restore the DTA address in {\ul both} protected mode and real mode.  To get the current real mode DTA the program must use the translation serv
+ices to call the real mode DOS Get DTA function.
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.2.3 Function 32h -- Get Current Country Data
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab This call returns a 34-byte buffer that contains a dword call address at offset 12h that is used for case-mapping.  This dword will contain a {\ul real mode address}
+.  If you wish to call the case-mapping procedure you will need to use the DPMI translation service to simulate a real mode far call (see page {\field{\*\fldinst pageref realfarcall}{\fldrslt }}).
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.2.4 Functions 3Fh and 40h -- Read/Write File or Device
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab 32-bit programs must specify the size of the read or write in the ECX register instead of the CX register.  This allows for read and writes of greater than 64K.  {\revised 
+The returned count will be in EAX instead of AX.  }{\strike Note that }16-bit programs are still limited to reads of 0FFFFh bytes{\revised  and the count will be retuned in AX}.
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.2.5 Function 44h, Subfunctions 02h, 03h, 04h, and 05h
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab These IOCTL subfunctions are used to receive data from a device or send data to a device.  Since it is not possible to break the transfers into small pieces, the 
+caller should assume that a transfer of greater than 2K bytes will fail unless the address of the buffer is in the DOS addressable first megabyte.
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.2.6 Function 44h, Subfunction 0Ch
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab 
+Only minor function codes 45h (get iteration count) and 65h (set iteration count) are supported from protected mode.  Extensions of this IOCTL for code-page switching (functions function codes 4Ah, 4Ch, 4Dh, 6Ah, and 6Bh) are {\ul not}
+ supported for protected mode programs.  You must use the translation services if you need to use this IOCTL to switch code pages (see page {\field{\*\fldinst pageref xlat}{\fldrslt }}).
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.2.7 Functions 48h, 49h and 4Ah
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab It is recommended that all memory allocations be made through the DPMI memory allocation services (see page {\field{\*\fldinst pageref memallo}{\fldrslt }}
+).  However, these DOS calls will work in protected mode.
+\par 
+\par \tab DOS memory allocation calls issued by a protected mode program will allocate extended memory.  This memory is {\ul not} addressable by real mode DOS.
+\par 
+\par \tab 32-bit programs must specify the number of paragraphs to allocate in the EBX register.  This allows for memory allocations of greater than 1Mb.
+\par 
+\par \tab To determine the size of the largest available block set (E)BX to -1 and call function 48h.
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.2.8 Function 4Bh -- Load and Execute Program
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab 
+This function can not be used to load a program overlay from a protected mode program.  However, you can execute another program using subfunction 0.  The program will be executed in real mode.  However, the child program can enter protected mode using t
+he DPMI real to protected mode switch API.
+\par 
+\par \tab The environment pointer in the exec parameter block is ignored and should be set to 0 by 16-bit programs.  32-bit programs should place an fword pointer to the command tail at offset 0.{\revised  (~~~MORE DETAIL~~~)}
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.2.9 Function 4Ch -- Terminate Process with Return Code
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab 
+This is the only supported form of program termination for protected mode DOS programs.  It behaves exactly as it would in real mode.  It will free any memory that was allocated by the protected mode program, and return to the parent program.  The 
+protected mode Int 23h and Int 24h vectors will be restored to the same value as {\revised ~~~~~~~.}
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 8.2.10 Function 65h -- Get Extended Country Information
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab This function is supported for protected mode programs.  However, all doubleword parameters returned will contain {\ul real mode addresses}
+.  This means the case conversion procedure address and all pointers to tables will contain real mode segment:offset addresses.  You must use the translation services to call the case conversion procedure in real mode.
+\par \pard\plain \qj\sl-240 \f2\lang1033 {\strike 
+\par }{\strike 
+\par }{\strike 
+\par }\pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 9. Supported BIOS Calls
+\par \pard\plain \qj\sl-240 \f2\lang1033 {\strike 
+\par }
+All BIOS calls that pass parameters in the AX, BX, CX, DX, SI, DI, and BP registers, and that contain no pointers or segment values in these registers will be supported by all implementations of DPMI (provided, of course, that the API is supported by the 
+machine's BIOS).
+\par 
+\par For the sake of clarity and completeness, this document contains a list of every BIOS API that will be supported, including those that are register based APIs.  APIs that are not register based are documented individually.
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 9.1 Interrupt 10h -- Video
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 9.1.1 Register Based Functions (supported):
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 \tab AH\tab Description
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \tab 00h\tab Set Mode\line \tab 01h\tab Set Cursor Type\line \tab 02h\tab Set Cursor Position\line \tab 03h\tab Read Cursor Position\line \tab 04h
+\tab Read Light Pen Position\line \tab 05h\tab Select Active Display Page\line \tab 06h\tab Scroll Active Page Up\line \tab 07h\tab Scroll Active Page Down\line \tab 08h\tab Read Attribute/Char at Cursor Position\line \tab 09h\tab Wri
+te Attribute/Char at Cursor Position\line \tab 0Ah\tab Write Character at Cursor Position\line \tab 0Bh\tab Set Color Palette\line \tab 0Ch\tab Write Dot\line \tab 0Dh\tab Read Dot\line \tab 0Eh\tab Write Teletype to Active Page\line \tab 0Fh\tab 
+Read Current Video State\line \tab 1Ah\tab Read/Write Display Combination Code
+\par \pard\plain \s3\qj\fi-720\li1440\sl-240 \f2\lang1033 
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 9.1.2 Function 10h -- Set Palette Registers
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab All subfunctions of this API are supported.
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 9.1.3 Function 13h -- Write String
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab This call is supported provided the string is not longer than 2K bytes.
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 9.1.4 Functions that are not Fully Supported
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab Many of these functions have APIs that are register based.  All register based calls are supported.  However, any APIs that contain pointer parameters are not supported under DPMI.
+\par 
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 \tab AH\tab DESCRIPTION
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \tab 11h\tab Character Generator\line \tab 12h\tab Alternate Select\line \tab 14h\tab Load LCD Character Font\line \tab 15h\tab 
+Return Physical Display Parameters\line \tab 1Bh\tab Return Functionality/State Info\line \tab 1Ch\tab Save/Restore Video State
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 9.2 Interrupt 11h -- Equipment Determination
+\par \pard\plain \qj\sl-240 \f2\lang1033 Since interrupt 11h is register based, it will be supported by all implementations of DPMI.
+\par 
+\par {\b COMPATIBILITY WARNING:}  EISA machines will destroy the high word of the EAX register on machines with 80386 CPUs.
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 9.3 Interrupt 12h -- Memory Size Determination
+\par \pard\plain \qj\sl-240 \f2\lang1033 Since interrupt 12h is register based, it will be supported by all implementations of DPMI.
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 9.4 Interrupt 13h -- Diskette / Fixed Disk Interface
+\par \pard\plain \qj\sl-240 \f2\lang1033 Application programs have no reason to use this interrupt.  In any case, since direct disk access will not be allowed most implementations of DPMI, programs can not rely on these functions.
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 9.5 Interrupt 14h -- Asynchronous Communications
+\par \pard\plain \qj\sl-240 \f2\lang1033 Since all asynchronous communication APIs are register based, they are all supported.
+\par 
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 \tab AH\tab Description
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \tab 00h\tab Initialize Communications Port\line \tab 01h\tab Send Character\line \tab 02h\tab Receive Character\line \tab 03h\tab Read Status\line 
+\tab 04h\tab Extended Initialize\line \tab 05h\tab Extended Communications Port Control
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 9.6 Interrupt 15h -- System Services
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 9.6.1 Register Based Functions (supported):
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 \tab ah\tab description
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \tab 00h\tab Turn Cassette Motor On\line \tab 01h\tab Turn Cassette Motor Off\line \tab 40h\tab Read/Modify Profiles\line \tab 42h\tab 
+Request System Power-Off\line \tab 43h\tab Read System Status\line \tab 44h\tab Activate/Deactivate Internal Modem\line \tab 80h\tab Device Open\line \tab 81h\tab Device Close\line \tab 82h\tab Program Termination\line \tab 84h\tab Joystick Support\line 
+\tab 86h\tab Wait\line \tab 87h\tab Extended Memory Size\line \tab C3h\tab Enable/Disable Watchdog Time-Out\line \tab C4h\tab Programmable Option Select (POS)
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 9.6.2 Function C0h -- Return System Configuration Parameters
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab This call is supported.  The pointer to the system descriptor vector will be in ES:EBX for 32-bit programs.  
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 9.6.3 Function C1h -- Pointing Device Interface
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab This interface will {\ul not} be supported under most implementations of DPMI.  Programs that use a mouse are encouraged to use the Int 33h interface documented on page {\field{\*\fldinst 
+pageref mouse}{\fldrslt }}.
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 9.6.4 Functions that are {\ul Not} Supported:
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 \tab ah\tab Description
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \tab 02h\tab Read Blocks from Cassette\line \tab 03h\tab Write Blocks to Cassette\line \tab 0Fh\tab Format Unit Periodic Interrupt\line \tab 21h
+\tab Power-On Self-Test Error Log\line \tab 41h\tab Wait for External Event\line \tab 4Fh\tab Keyboard Intercept\line \tab 83h\tab Wait Event\line \tab 85h\tab System Request Key Pressed\line \tab 87h\tab Move Block\line \tab 89h\tab Sw
+itch Processor to Protected Mode\line \tab 90h\tab Device Busy\line \tab 91h\tab Interrupt Complete\line \tab C1h\tab Return Extended BIOS Data Area Seg
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 9.7 Interrupt 16h -- Keyboard
+\par \pard\plain \qj\sl-240 \f2\lang1033 Since all keyboard APIs are register based, they are all supported.
+\par 
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 \tab ah\tab description
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \tab 00h\tab Keyboard Read\line \tab 01h\tab Keyboard Status\line \tab 02h\tab Shift Status\line \tab 03h\tab Set Typematic Rate\line \tab 04h\tab 
+Keyboard Click Adjustment\line \tab 05h\tab Keyboard Write\line \tab 10h\tab Extended Keyboard Read\line \tab 11h\tab Extended Keyboard Status\line \tab 12h\tab Extended Shift Status
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 9.8 Interrupt 17h -- Printer
+\par \pard\plain \qj\sl-240 \f2\lang1033 Since all printer APIs are register based, they are all supported.
+\par 
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 \tab ah\tab description
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \tab 00h\tab Print Character\line \tab 01h\tab Initialize the Printer\line \tab 02h\tab Read Status
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 \page 9.9 Interrupt 1Ah -- System-Timer and Real-Time Clock
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 9.9.1 Register Based Functions (supported):
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 \tab AH\tab Description
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \tab 00h\tab Read System-Timer Time Counter\line \tab 01h\tab Set System-Timer Time Counter\line \tab 02h\tab Read Real-Time Clock Time\line \tab 
+03h\tab Set Real-Time Clock Time\line \tab 04h\tab Read Real-Time Clock Date\line \tab 05h\tab Set Real-Time Clock Date\line \tab 07h\tab Set Real-Time Clock Alarm\line \tab 08h\tab Set Real-Time Clock Activated Power On\line \tab 09h\tab 
+Read Real-Time Clock Alarm Status\line \tab 0Ah\tab Read System-Timer Day Counter\line \tab 0Bh\tab Set System-Timer Day Counter
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 9.9.2 Function 06h -- Set Real-Time Clock Alarm
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab Although this call is register based and therefore requires no translation before being passed to real mode, the caller is required to hook the {\ul real mode}
+ interrupt 4Ah vector to intercept the alarm interrupt.
+\par \pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 10. {\*\bkmkstart mouse}M{\*\bkmkend mouse}ouse Driver Interface
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+DPMI supports a subset of the standard Int 33h mouse driver interface for protected mode programs.  It may be necessary for programs to call the mouse driver in real mode either before switching to protected mode or by using the translation services to co
+mpletely save and restore the mouse driver state.
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 10.1 Mouse Calls that Are Supported
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 10.1.1 Register Based Calls
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 \tab ah\tab description
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \tab 00h\tab Reset Mouse and Get Status\line \tab 01h\tab Show Mouse Pointer\line \tab 02h\tab Hide Mouse Pointer\line \tab 03h\tab 
+Get Mouse Position and Button Status\line \tab 04h\tab Set Mouse Pointer Position\line \tab 05h\tab Get Button Press Information\line \tab 06h\tab Get Button Release Information\line \tab 07h\tab Set Horizontal Limits for Pointer\line \tab 08h\tab 
+Set Vertical Limits for Pointer\line \tab 0Ah\tab Set Text Pointer Type\line \tab 0Bh\tab Read Mouse Motion Counters\line \tab 0Dh\tab Turn on Light Pen Emulation\line \tab 0Eh\tab Turn off Light Pen Emulation\line \tab 0Fh\tab Set Mickeys to Pixels Ratio
+\line \tab 10h\tab Set Mouse Pointer Exclusion Area\line \tab 13h\tab Set Double Speed Threshold\line \tab 15h\tab Get Mouse Save State Buffer Size\line \tab 1Ah\tab Set Mouse Sensitivity\line \tab 1Bh\tab Get Mouse Sensitivity\line \tab 1Ch\tab 
+Set Mouse Interrupt Rate\line \tab 1Dh\tab Select Pointer Page\line \tab 1Eh\tab Get Pointer Page\line \tab 20h\tab Enable Mouse\line \tab 21h\tab Reset Mouse Driver\line \tab 22h\tab Set Language for Mouse Driver\line \tab 23h\tab Get Language Number
+\line \tab 24h\tab Get Mouse Information
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 10.1.2 Function 09h -- Set Pointer Shape
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab This call works exactly as it would in real mode.  However, 32-bit programs must use ES:EDX to point to the pointer image buffer.
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 \page 10.1.3 Function 0Ch -- Set User-Defined Mouse Event Handler
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab 
+32-bit programs must call this function with ES:EDX = Selector:Offset of handler and will need to execute a 32-bit far return to return from the event call-back.  For both 16-bit and 32-bit programs the protected mode DS will {\ul not}
+ point to the mouse driver data segment when the event handler is called.  Do not rely on any specific value in the DS register when the event handler is called.
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 10.1.4 Functions 16h and 17h -- Save/Restore Mouse Driver State
+\par \pard\plain \s2\qj\fi-720\li720\sl-240 \f2\lang1033 \tab These calls work exactly as they would in real mode.  However, 32-bit programs must use ES:EDX to point to the buffer.
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 10.2 Mouse Calls that Are Not Supported
+\par \pard\plain \s9\li1440\ri1440\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tqc\tx4608 \shading1000 \caps\f2\lang1033 \tab ah\tab description
+\par \pard\plain \s8\li1440\ri1440\sl-240\keep\box\brdrs\brdrw15\brdrcf1 \tqc\tx1872\tx2304\tx2592 \f2\lang1033 \tab 14h\tab Swap User-Defined Event Handlers\line \tab 18h\tab Set Alternate Event Handler\line \tab 19h\tab Get Address of Alternate Event Handler
+\line \tab 1Fh\tab Disable Mouse Driver
+\par \pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 11. NETBIOS
+\par \pard\plain \qj\sl-240 \f2\lang1033 Some implementations of DPMI support NetBIOS calls in protected mode, although this is not required.  Programs can
+ determine wether or not the current DPMI implementation supports NetBIOS calls from protected mode by examining the flags returned from the Get Version call (see page {\field{\*\fldinst pageref getver}{\fldrslt }}
+).  A program that uses NetBIOS and needs to run on any DPMI implementation will need to use the translation services documented on page {\field{\*\fldinst pageref xlat}{\fldrslt }}.
+\par 
+\par 32-bit programs can call NetBIOS if it is supported.  In this case, ES:EBX must be used to point to the Network Control Block (NCB).  However, pointers within the NCB are r
+estricted to a 16-bit offset.  Therefore, all buffers must reside within the first 64K of the buffer's segment.
+\par 
+\par 
+\par \pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 12. {\*\bkmkstart int23and24}I{\*\bkmkend int23and24}nterrupts 23h and 24h
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+DOS provides two interrupts that programs can hook to handle Ctrl+Break and critical device errors.  These interrupts are reflected to protected mode programs if the program hooks the interrupt in protected mode.  Although both of these interrupts can be 
+used to terminate a program in real mode, they can not be used to terminate protected mode programs.
+\par 
+\par Protect
+ed mode Int 23h and Int 24h handlers must reside in locked memory and all data that they touch must also be locked.  This is required to prevent a page fault from occurring at a time when DOS can not be called to read the data in from disk.  These interru
+pt handlers will always be called on a locked stack.
+\par 
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 12.1.1 Interrupt 23h
+\par \pard\plain \qj\sl-240 \f2\lang1033 Interrupt 23h is the DOS Ctrl+Break interrupt.  This interrupt will be reflected to protected mode if a protected mode interrupt handler is installed.  Unlike real mode DOS, the interrupt handler {\ul must return}
+.  This interrupt can not be used to terminate a protected mode program and the value of the carry flag will be ignored when the interrupt returns.It is suggested that you set a flag in your program that will be examined later and then execute an {\i 
+iret }to return from the interrupt.
+\par 
+\par Int 23h is ignored for protected mode programs unless it is hooked in protected mode.
+\par 
+\par \pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 12.1.2 Interrupt 24h
+\par \pard\plain \qj\sl-240 \f2\lang1033 When Int 24h is called in protected mode, SS:(E)BP will point to a standard Int 24h stac
+k frame.  32-bit programs will be called with a 32-bit iret frame but the rest of the stack frame will be exactly as that of a 16-bit Int 24h.  The values on the stack will contain the values passed to DOS in {\ul real mode}
+.  Therefore, the segment register values on the stack will be real mode segments, not selectors.
+\par 
+\par Protected mode Int 24h handlers {\ul must iret}.  Since programs can not be terminated by a critical error handler, an attempt to abort the program (returning with AL=02h) will be ignored and the DOS call will be failed.{\revised 
+  That is, a return of AL=02 will be converted to AL=03 by the host.}
+\par 
+\par The default Int 24h handler will fail all critical errors.  Therefore, unless the protected mode Int 24h vector is hooked, all DOS calls that generate a critical error will fail.
+\par \pard\plain \s254\qc\sa480\sl-360\keep\keepn \b\caps\f2\fs28\lang1033 \page 13. Additional Host Support Required to Run Microsoft Windows in Protected Mode
+\par \pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 {\revised 13.1 "Undocumented" DOS Calls That Must Be Supported
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised The Windows kernel calls several DOS functions that are not documented in the }{\i\revised MS-DOS Encyclopedia}{\revised .  Sin}{\revised 
+ce these calls are required to run Windows, DPMI servers that support the MS-DOS extensions must support them in protected mode.
+\par }\pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 {\revised AH=1Fh and AH=32h
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised These calls return a pointer in DS:BX that points to a table inside of DOS.  ~~~(WHAT ARE THEY???)~~~
+\par }\pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 {\revised AH=50h -- Get PSP
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised This call is identical to DOS call 62h.  The host must return a selector that points to the current PSP in BX.
+\par }\pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 {\revised AH=51h -- Set PSP
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised This call is used by the Windows kernel to switch PSPs when running multiple Windows applications.  The call w}{\revised 
+ill be made with BX=Selector of PSP to set as current PSP.  The PSP memory is guaranteed to be in the DOS addressable 1 Mb and paragraph aligned.  The host must convert the base address of the selector into a real mode segment and pass the call on to real
+}{\revised  mode DOS.
+\par }\pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 {\revised AH=52h -- Get Pointer to List of Lists
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised This call returns a pointer in ES:BX that points to a table inside of DOS.
+\par }\pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 {\revised AH=53h -- Translate BIOS Parameter Block
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised This call takes ~~~~ FIND OUT ABOUT WHICH ARE INPUT AND WHAT IS RETURNED~~~
+\par }\pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 {\revised AH=55h -- }{\revised Create PSP
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised 
+This call is identical to DOS call 26h.  The caller passes a selector to a 100h byte paragraph aligned block of memory in the first Mb of linear address space.  The host must convert the selector base address into a real mode segment and pass the call on 
+}{\revised the real mode DOS.  The Windows kernel will be responsible for creating the environment and modifying the envionrment pointer in the newly created PSP.
+\par }{\revised ~~~(CHECK OUT ALL IOCTLS)~~~~
+\par }\pard\plain \s252\sb240\sa240\sl-240\keep\keepn \b\f2\lang1033 {\revised AH=5Dh -- Server DOS Calls
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised ~~~ DOCUMENT ALL THAT NEED TO BE }{\revised SUPPORTED ~~~~
+\par }{\revised 
+\par }\pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 {\revised {\*\bkmkstart call0}1{\*\bkmkend call0}3.2 Special handling of DOS call 0
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised 
+Int 21h, AH=00h is the original DOS 1.00 terminate call.  DPMI programs should always terminate using DOS call 4Ch.  However, since Windows applications have seperate PSPs, the Windows kernel must have a mechanism for terminaing the Windows applicationsso
+}{\revised  that networks can clean up, and DOS can close open files.  The standard AH=4Ch terminate call is inappropriate for this purpose since it would cause the kernel to be terminated.
+\par }{\revised 
+\par }{\revised Under the MS-DOS ext}{\revised ensions of DPMI, DOS call 0 terminates the current PSP and then returns to the caller (which will be the Windows kernel).  When the host intercepts an Int 21h, AH=0 it should patch the current PSP so t~~
+\par }\pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 {\revised GDT Selector 40h Must Be Reserved
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised 
+Many Windows hardware drivers use the constant selector value 40h to access the BIOS RAM area at 0040:0000-0040:02FF.  For many 3rd party drivers, GDT selector 40h must be mapped with a linear address of 400h and a limit of 2FEh.  This compatibilty constr
+}{\revised aint applies to o}{\revised 
+ther DPMI applications besides Windows.  Hosts should define selector 40h as specified here or should be capable of handling a GP fault when a program attempts to load a segment register with 40h and substitute an appropriate selector.
+\par }{\revised 
+\par }{\b\revised NOTE TO SOFTWARE DEVELOPERS:  DON'T USE THIS!}{\revised 
+  Windows drivers and applications should link to the kernel defined absolute export variable __0040h.  DPMI applications should use Int 31h function 0002h.  However, for compatibility with Windows and other DPMI applications, h}{\revised 
+osts should map selector 40h as specified above.
+\par }\pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 {\revised Windows Must Run At Ring 3
+\par }\pard\plain \qj\sl-240 \f2\lang1033 {\revised Because of the way the Windows kernel manipulates memory handles, it must always run at Ring 3.
+\par }\pard\plain \s253\sb720\sa240\sl-240\keep\keepn\box\brdrs\brdrw15\brdrcf1 \shading1000 \b\f2\fs28\lang1033 13.1 Direct Disk I/O
+\par \pard\plain \qj\sl-240 \f2\lang1033 
+Windows Enhanced and Standard mode support interrupts 25h, 26h, and a subset of Int 13h diskette functions so that the File Manager can format diskettes.  Application programs have no reason to use either of these interrupts.  DPMI hosts must support thes
+e functions if they wish allow diskettes to be formatted using the Windows file manager.  In any case, if these functions are not supported then appropriate error codes should be returned when these APIs are called.
+\par {\strike 
+\par }
+\par Windows supports a subset of the diskette functions that are used by the File Manager to format diskettes.  {\revised (~~WHAT ARE THEY~~)}
+\par 
+\par 
+\par 
+\par }
